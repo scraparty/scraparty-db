@@ -1,2 +1,2 @@
 # scraparty-db
-a golang package for connecting to CockroachDB
+a golang package for connecting to a postgres database
