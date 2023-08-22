@@ -22,9 +22,7 @@ func Connect() (gorm.DB, error) {
 		"",
 	)
 
-	db, err := gorm.Open(postgres.Open(connection_string), &gorm.Config{
-		DisableForeignKeyConstraintWhenMigrating: true,
-	})
+	db, err := gorm.Open(postgres.Open(connection_string), &gorm.Config{})
 
 	if err != nil {
 		return gorm.DB{}, err
